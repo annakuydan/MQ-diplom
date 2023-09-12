@@ -685,6 +685,23 @@
     position: fixed;
     height: 589px;
   }
+
+  .feedback {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .feedback::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 12px;
+  }
   
   .popup-close {
     background-image: url("../svg/form-x.svg");
