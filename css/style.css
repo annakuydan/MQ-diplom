@@ -691,6 +691,7 @@
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: 25px;
+    margin-top:  40px;
   }
   .feedback::after {
     content: "";
@@ -702,17 +703,15 @@
     margin-left: auto;
     margin-top: 12px;
   }
-  
-  .popup-close {
-    background-image: url("../svg/form-x.svg");
+
+  .close1 {
     width: 18px;
     height: 18px;
     font-size: 14px;
     position: absolute;
     top: -21px;
     right: 0;
-  } 
-
+  }
 
    button {
     cursor: pointer;
@@ -722,11 +721,12 @@
   .question {
     display: block;
     font-size: 13px;
-    line-height: 40px;
+    line-height: 20px;
     color: #000000;
     font-weight: 400;
     font-family: "Open Sans";
     margin-left: 33px;
+    
   }
 
   .container-area {
@@ -759,10 +759,75 @@
     border: none;
     margin-bottom: 25px;
     padding-left: 25px;
-   
+    color: #707171;
+    font-size: 13px;
   }
   
   .choose-optio:focus {
     background-color: #f4f7f6;
     border: 1px solid #b59f5b;
   }
+
+  .email-area {
+    margin-bottom: 28px;
+  }
+
+  .choose {
+    position: relative;
+    font-size: 13px;
+    margin-left: 33px;
+  }
+
+  .radio-check {
+    appearance: none;
+    padding-left: 20px;
+  }
+
+  .radio-text::before {
+    content: '';
+    position:absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+
+    background-image: url("../svg/form-empty-circle.svg");
+
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .radio-check:checked + .radio-text::before {
+    background-image: url("../svg/form-circle.svg");
+  }
+
+.text-area {
+    width: 330px;
+    height: 131px;
+    background-color: #f4f7f6;
+    border: none;
+    resize: none;
+    padding-top: 18px;
+    padding-right: 30px;
+    margin-left: 33px;
+    margin-top: 24px;
+    color: #707171;
+    font-size: 13px;
+}
+
+.popup-button {
+  margin-top: 24px;
+  margin-left: 33px;
+  font-size: 15px;
+  width: 330px;
+  height: 48px;
+  background-color: #b59f5b;
+  border: none;
+  color: #ffffff;
+}
+
+.popup-button:hover {
+  background-color: #323232;
+}
